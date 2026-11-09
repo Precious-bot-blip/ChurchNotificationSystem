@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE resources PUBLIC 
+    "-//GlassFish.org//DTD GlassFish Application Server 3.1 Resource Definitions//EN" 
+    "http://glassfish.org/dtds/glassfish-resources_1_5.dtd">
+
+<resources>
+    
+    <!-- JMS Connection Factory -->
+    <connector-connection-pool 
+        name="jms/ChurchConnectionFactoryPool"
+        resource-adapter-name="jmsra"
+        connection-definition-name="javax.jms.ConnectionFactory">
+    </connector-connection-pool>
+    
+    <connector-resource 
+        pool-name="jms/ChurchConnectionFactoryPool"
+        jndi-name="jms/ChurchConnectionFactory"
+        enabled="true">
+    </connector-resource>
+    
+    <!-- JMS Queue -->
+    <admin-object-resource 
+        res-adapter="jmsra"
+        jndi-name="jms/ChurchNotificationQueue"
+        class-name="com.sun.messaging.Queue"
+        res-type="javax.jms.Queue"
+        enabled="true">
+        <property name="Name" value="ChurchNotificationQueue"/>
+    </admin-object-resource>
+    
+</resources>

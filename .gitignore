@@ -1,0 +1,10 @@
+﻿# NetBeans specific
+nbproject/private/
+build/
+dist/
+nbbuild/
+nbdist/
+
+# Compiled files
+*.class
+*.war

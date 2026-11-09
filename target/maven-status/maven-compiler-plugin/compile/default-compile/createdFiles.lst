@@ -1,0 +1,11 @@
+com\church\websocket\NotificationWebSocket.class
+com\church\storage\MessageStorage.class
+com\church\jms\JMSMessageListener.class
+com\church\storage\UserStorage.class
+com\church\servlet\JMSMessageServlet.class
+com\church\servlet\LogoutServlet.class
+com\church\model\User.class
+com\church\servlet\MessageServlet.class
+com\church\jms\JMSProducer.class
+com\church\servlet\LoginServlet.class
+com\church\servlet\RegistrationServlet.class
